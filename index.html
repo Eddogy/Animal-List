@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------------------- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- ------------------------- -->
+    <title>Animal List App</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">My<span class="text-primary"></span>AnimalList</h1>
+        <form id="animal-form">
+            <div class="form-group">
+                <label for="animal-type">Animal Type</label>
+                <select class="form-control" id="animal-type">
+                    <option value="select-animal" selected id="select-animal">Select an Animal</option>
+                    <option value="Cat" id="cat-selection">Cat</option>
+                    <option value="Bird" id="bird-selection">Bird</option>
+                    <option value="Horse" id="horse-selection">Horse</option>
+                  </select>
+            </div>
+            <div id="cat-input">
+                <div class="form-group">
+                    <label for="breed">Breed</label>
+                    <input type="text" id="cat-breed" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="fur-color">Fur Color</label>
+                    <input type="text" id="cat-fur-color" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="animal-name">Pets Name</label>
+                    <input type="text" id="cat-pet-name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="owner">Pets Owner</label>
+                    <input type="text" id="cat-pet-owner" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="owner-phone">Owner Phone</label>
+                    <input type="number" id="cat-owner-phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="microchip-number">Microchip Number</label>
+                    <input type="number" id="cat-microchip-number" class="form-control">
+                </div>
+            </div>
+            <div id="bird-input">
+                <div class="form-group">
+                    <label for="species">Species</label>
+                    <input type="text" id="bird-species" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="beak-color">Beak Color</label>
+                    <input type="text" id="bird-beak-color" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="feather-color">Feather Color</label>
+                    <input type="text" id="bird-feather-color" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="animal-name">Pets Name</label>
+                    <input type="text" id="bird-pet-name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="owner">Pets Owner</label>
+                    <input type="text" id="bird-pet-owner" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="owner-phone">Owner Phone</label>
+                    <input type="number" id="bird-owner-phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="microchip-number">Microchip Number</label>
+                    <input type="number" id="bird-microchip-number" class="form-control">
+                </div>
+            </div> 
+            <div id="horse-input">
+                <div class="form-group">
+                    <label for="breed">Breed</label>
+                    <input type="text" id="horse-breed" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="hair-color">Hair Color</label>
+                    <input type="text" id="horse-hair-color" class="form-control">
+                </div>
+                <label for="horse-shoes">Horse Shoes</label>
+                <select class="form-control" id="horse-shoes">
+                    <option value="yes" id="horse-yes">Yes</option>
+                    <option value="no" id="horse-no">No</option>
+                  </select>
+                  <div class="form-group">
+                    <label for="animal-name">Horse Name</label>
+                    <input type="text" id="horse-name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="horse-owner">Horse Owner</label>
+                    <input type="text" id="horse-owner" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="owner-phone">Owner Phone</label>
+                    <input type="number" id="horse-owner-phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="microchip-number">Microchip Number</label>
+                    <input type="number" id="horse-microchip-number" class="form-control">
+                </div>
+            </div> 
+            <input type="submit" value="Add Animal" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped" id="delete-cat"></table>
+        <table class="table table-striped" id="delete-bird"></table>
+        <table class="table table-striped" id="delete-horse"></table>
+    </div>
+    <!-- ------------------------- -->
+    <script type="module" src="animal.js"></script>
+    <script type="module" src="cat.js"></script>
+    <script type="module" src="bird.js"></script>
+    <script type="module" src="horse.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- ------------------------- -->
+</body>
+</html>

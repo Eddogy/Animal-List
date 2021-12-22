@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#cat-input {
+    display: none;
+}
+
+div#cat-input.show {
+    display: block;
+}
+
+div#bird-input {
+    display: none;
+}
+
+div#bird-input.show {
+    display: block;
+}
+
+div#horse-input {
+    display: none;
+}
+
+div#horse-input.show {
+    display: block;
+}
